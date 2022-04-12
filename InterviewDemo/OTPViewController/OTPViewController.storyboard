@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OTPViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="OTPViewController" customModule="InterviewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-IV-Nng">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBY-yP-Cce">
+                                        <rect key="frame" x="179.5" y="105" width="55.5" height="34"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
+                                        <color key="textColor" red="1" green="0.91764705879999997" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="frZ-bN-PYN">
+                                        <rect key="frame" x="103.5" y="377" width="207" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="RUY-U9-meU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXQ-nh-1zO">
+                                        <rect key="frame" x="124" y="465" width="166" height="45"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="dD7-fn-2CB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.035294117649999998" green="0.76470588240000004" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iuw-RJ-kvt"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAs-1b-OVP">
+                                        <rect key="frame" x="0.0" y="149" width="414" height="213"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_food" translatesAutoresizingMaskIntoConstraints="NO" id="KL1-Cf-RNE">
+                                                <rect key="frame" x="-43" y="1" width="500" height="211"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.035294117649999998" green="0.76470588240000004" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="KL1-Cf-RNE" firstAttribute="centerY" secondItem="xAs-1b-OVP" secondAttribute="centerY" id="5qO-pr-K24"/>
+                                            <constraint firstItem="KL1-Cf-RNE" firstAttribute="centerX" secondItem="xAs-1b-OVP" secondAttribute="centerX" id="hzd-Te-tZl"/>
+                                            <constraint firstItem="KL1-Cf-RNE" firstAttribute="top" secondItem="xAs-1b-OVP" secondAttribute="top" constant="1" id="zci-9v-ONb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.76470588240000004" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xAs-1b-OVP" firstAttribute="top" secondItem="tBY-yP-Cce" secondAttribute="bottom" constant="10" id="14x-8a-iOv"/>
+                                    <constraint firstItem="frZ-bN-PYN" firstAttribute="centerX" secondItem="Mke-IV-Nng" secondAttribute="centerX" id="Awh-Kg-m1c"/>
+                                    <constraint firstItem="sXQ-nh-1zO" firstAttribute="centerX" secondItem="Mke-IV-Nng" secondAttribute="centerX" id="WuI-4X-dpA"/>
+                                    <constraint firstAttribute="trailing" secondItem="xAs-1b-OVP" secondAttribute="trailing" id="Ydg-tP-42S"/>
+                                    <constraint firstItem="sXQ-nh-1zO" firstAttribute="width" secondItem="Mke-IV-Nng" secondAttribute="width" multiplier="0.4" id="ZYC-gr-red"/>
+                                    <constraint firstItem="tBY-yP-Cce" firstAttribute="centerX" secondItem="Mke-IV-Nng" secondAttribute="centerX" id="dsf-aP-267"/>
+                                    <constraint firstItem="sXQ-nh-1zO" firstAttribute="top" secondItem="frZ-bN-PYN" secondAttribute="bottom" constant="50" id="hfS-Mt-vab"/>
+                                    <constraint firstItem="tBY-yP-Cce" firstAttribute="top" secondItem="Mke-IV-Nng" secondAttribute="top" constant="105" id="nXS-wH-LLl"/>
+                                    <constraint firstItem="frZ-bN-PYN" firstAttribute="top" secondItem="xAs-1b-OVP" secondAttribute="bottom" constant="15" id="pyw-kk-5eM"/>
+                                    <constraint firstItem="xAs-1b-OVP" firstAttribute="leading" secondItem="Mke-IV-Nng" secondAttribute="leading" id="qBu-wC-47q"/>
+                                    <constraint firstItem="xAs-1b-OVP" firstAttribute="height" secondItem="Mke-IV-Nng" secondAttribute="height" multiplier="0.25" id="qGa-cl-wTj"/>
+                                    <constraint firstItem="frZ-bN-PYN" firstAttribute="width" secondItem="Mke-IV-Nng" secondAttribute="width" multiplier="0.5" id="qHQ-id-POI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.76470588240000004" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mke-IV-Nng" secondAttribute="bottom" id="FV3-8u-veP"/>
+                            <constraint firstItem="Mke-IV-Nng" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Q4q-Rx-cbe"/>
+                            <constraint firstItem="Mke-IV-Nng" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Shb-ib-Nyg"/>
+                            <constraint firstItem="Mke-IV-Nng" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rVh-um-W2M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="sXQ-nh-1zO" id="xje-7N-hRK"/>
+                        <outlet property="otpTextField" destination="frZ-bN-PYN" id="hnr-kp-0Ry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_food" width="500" height="500"/>
+    </resources>
+</document>
